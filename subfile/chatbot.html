@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/chatboot.css" />
+    <style>
+      body {
+        background-image: linear-gradient(80deg, #8e78ee, #b9dedb);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav nav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="../index.html">Home</a>
+      <a href="../subfile/gallery.html">Gallery</a>
+      <a href="../subfile/chatbot.html">ChatBot</a>
+      <a href="../subfile/team.html">Team</a>
+    </div>
+    <br /><br />
+    <span
+      style="font-size: 30px; cursor: pointer; margin-left: 1%;"
+      onclick="openNav()"
+      >&#9776;
+    </span>
+
+    <div class="containercb">
+      <div class="line" style="margin-top: 100px;">
+        <div class="square">P</div>
+        <div class="square">L</div>
+        <div class="square">E</div>
+        <div class="square">A</div>
+        <div class="square">S</div>
+        <div class="square">E</div>
+        <div class="square" style="margin-left: 30px;">T</div>
+        <div class="square">R</div>
+        <div class="square">Y</div>
+        <div class="square" style="margin-left: 30px;">O</div>
+        <div class="square">U</div>
+        <div class="square">R</div>
+      </div>
+
+      <div class="line">
+        <div class="square">C</div>
+        <div class="square">H</div>
+        <div class="square">A</div>
+        <div class="square">T</div>
+        <div class="square">B</div>
+        <div class="square">O</div>
+        <div class="square">T</div>
+      </div>
+      <img src="../image/arrow.gif" id="arrow" />
+    </div>
+
+    <script type="text/javascript">
+      var square = document.getElementsByClassName("square");
+
+      for (var i = 0; i < square.length; i++) {
+        square[i].addEventListener("mouseenter", function () {
+          this.classList.add("rubberBand");
+          this.addEventListener(
+            "animationend",
+            function () {
+              this.classList.remove("rubberBand");
+            },
+            false
+          );
+        });
+      }
+    </script>
+  </div>
+  <script type="text/javascript"
+    id="botcopy-embedder-d7lcfheammjct"
+    class="botcopy-embedder-d7lcfheammjct"
+    data-botId="5eba293e5ce9bf00081522c2"
+>
+    var s = document.createElement('script');
+    s.type = 'text/javascript'; s.async = true;
+    s.src = 'https://widget.botcopy.com/js/injection.js';
+    document.getElementById('botcopy-embedder-d7lcfheammjct').appendChild(s);
+</script>l̥
+    <script>
+      /* Set the width of the side navigation to 150px and the left margin of the page content to 250px and add a black background color to body */
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.1)";
+      }
+
+      /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+      }
+    </script>
+  </body>
+</html>

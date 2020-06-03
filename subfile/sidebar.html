@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/nav.css" />
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="../index.html">Home</a>
+      <a href="./gallery.html">Gallery</a>
+      <a href="./chatbot.html">ChatBot</a>
+      <a href="./team.html">Team</a>
+    </div>
+    <br /><br />
+    <span
+      style="font-size: 30px; cursor: pointer; margin-left: 1%;"
+      onclick="openNav()"
+      >&#9776;
+    </span>
+    <h2>Make a Reservation</h2>
+    <p>Using ChatBot</p>
+    <script>
+      /* Set the width of the side navigation to 150px and the left margin of the page content to 250px and add a black background color to body */
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+        document.getElementById("main").style.marginLeft = "150px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+
+      /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+      }
+    </script>
+  </body>
+</html>
